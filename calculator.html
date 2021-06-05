@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourSys - Formula Tester</title>
+    <link rel = "stylesheet" href ="calculator.css">
+</head>
+
+<body>
+    <div class = "grey_background">
+        <div class = "white_background">
+            <h3>Grade Calculator</h3>
+                <div class = "main_background">
+                    <h4>Activities</h4>
+                    <p>Give grades to the numeric activities:</p>
+                    
+                    <form>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Short Name</th>
+                                <th>Weight</th>
+                                <th>Grade</th>
+                                <th>Percent</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Activity 1</td>
+                                <td>A1</td>
+                                <td><input type="number" id="weight-1" min ="0" max ="100"></td>
+                                <td><input type="number" id="grade-11" min ="0"><label><b>/</b></label>
+                                    <input type="number" id="grade-12" min ="0"></td>
+                                <td><p id="percentage_1"></p></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Activity 2</td>
+                                <td>A2</td>
+                                <td><input type="number" id="weight-2" min ="0"></td>
+                                <td><input type="number" id="grade-21" min ="0"><label><b>/</b></label>
+                                    <input type="number" id="grade-22" min ="0"></td>
+                                <td><p id="percentage_2"></p></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Activity 3</td>
+                                <td>A3</td>
+                                <td><input type="number" id="weight-3" min ="0"></td>
+                                <td><input type="number" id="grade-31" min ="0"><label><b>/</b></label>
+                                    <input type="number" id="grade-32" min ="0"></td>
+                                <td><p id="percentage_3"></p></td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Activity 4</td>
+                                <td>A4</td>
+                                <td><input type="number" id="weight-4" min ="0"></td>
+                                <td><input type="number" id="grade-41" min ="0"><label><b>/</b></label>
+                                    <input type="number" id="grade-42" min ="0"></td>
+                                <td><p id = "percentage_4"></p></td>
+                            </tr>
+                      </table>
+                    </form>
+                    
+                    <h4>Result</h4>
+                    
+                    <p id = "weighted"></p>
+                    <p id = "mean"></p>
+
+                    <button class = "bt1" onclick = "weightedGrade();return false;">WEIGHTED</button>
+                    <button class = "bt2" onclick = "meanOfGrades();return false;">MEAN</button>
+                
+                </div>   
+        </div>
+    </div>
+</body>
+
+<script src="calculator.js"></script>
+
+</html>
